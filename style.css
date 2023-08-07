@@ -21,18 +21,6 @@ main {
   width: 1200px;
 }
 
-/** // візуально приховати елементи */
-/* .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-padding: 0;
-overflow: hidden;
-border: 0;
-clip: rect(0 0 0 0);
-} */
-
 a {
   text-decoration: none;
 }
@@ -82,7 +70,7 @@ a {
   background-image: url(./img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   border-radius: 0px 0px 0px 290px;
   overflow: hidden;
   padding-left: 120px;
