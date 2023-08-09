@@ -15,3 +15,5 @@ section.brand>ul.brand-list>li.brand-item*5>svg[width="" height=""]>use[href="./
 section.projects>(h2.projects-title+p.projects-text)+ul.projects-list>li.projects-item*4>img>h3>p
 /* ====================== footer ======================== */
 footer.footer>(div.wrap>div.footer-info>((a>img.footer-logo)+p.footer-text{We are the leading architect and interior design firm in the world.})+ul.social-list>li.social-item*5>svg[width="" height=""]>use[href="./img/sprite.svg#icon_social_1"])+div.footer-copyright>p{Copyright © Internos | Designed by}>span[style="color: #CDA274"]{Victorflow}
+
+
