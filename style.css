@@ -1,10 +1,14 @@
+a {
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
   /* height: 100vh; */
   min-height: 100vh;
 
-  font-family: 'Jost';
+  font-family: "Jost";
   font-size: 22px;
 }
 
@@ -13,319 +17,28 @@ main {
   flex: 1 0 auto;
 }
 
-/** /контейнер для центрування контенту, розміри згідно макету/ */
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 320px;
 }
 
-a {
-  text-decoration: none;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
-
-/* ====================== header ======================== */
-.header {
-  height: 62px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
-.logo {}
-
-.nav {
-  /* display: flex; */
-}
-
-.nav-list {
-  display: flex;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 1.57;
-  letter-spacing: 0.4px;
-}
-
-.nav-list a {
-  color: #292F36;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.nav-item:hover a {
-  color: #CDA274;
-}
-
-.nav-item {}
-
-/* ========================= banner ===================== */
-.banner {
-  height: 831px;
-  /* background: lightgray url(./img/banner.jpg) no-repeat fixed; */
-  background-color: lightgray;
-  background-image: url(./img/banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-attachment: fixed; */
-  border-radius: 0px 0px 0px 290px;
-  overflow: hidden;
-  padding-left: 120px;
-  padding-top: 188px;
-  margin-bottom: 122px;
-
-}
-
-.banner-title {
-  color: #292F36;
-  font-family: DM Serif Display;
-  font-size: 80px;
-  line-height: 1.20;
-  letter-spacing: 0.22px;
-  margin-bottom: 19px;
-}
-
-.banner-text {
-  color: #4D5053;
-  font-size: 22px;
-  line-height: 1.50;
-  letter-spacing: 0.22px;
-  margin-bottom: 57px;
-}
-
-.bunner-btn {
-  color: #FFF;
-  background-color: #292F36;
-  border-radius: 18px;
-  font-size: 18px;
-  line-height: 1.50;
-  letter-spacing: 0.72px;
-  padding: 22px 51px;
-}
-
-
-/* ==============================features======================= */
-.features {
-  background-color: #F4F0EC;
-  padding: 75px 0 70px;
-  border-radius: 25px;
-  margin-bottom: 183px;
-}
-
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  column-gap: 104px;
-}
-
-.fetures-item {
-  flex-basis: calc((100% - 3 * 103px) / 3);
-}
-
-.fetures-item>h3 {
-  color: #292F36;
-  text-align: center;
-  font-family: DM Serif Display;
-  font-size: 25px;
-  line-height: 1.56;
-  letter-spacing: 0.22px;
-  margin-bottom: 12px;
-}
-
-.fetures-item>p {
-  color: #4D5053;
-  text-align: center;
-  font-size: 22px;
-  line-height: 1.50;
-  letter-spacing: 0.20px;
-}
-
-/* =================================project============================ */
-.project {
-  display: flex;
-  margin-bottom: 100px;
-}
-
-.project .wrap {}
-
-.project-title {
-  color: #292F36;
-  font-family: DM Serif Display;
-  font-size: 50px;
-  line-height: 1.30;
-  letter-spacing: 0.22px;
-  margin-bottom: 42px;
-}
-
-.project-text {
-  max-width: 531px;
-  color: #4D5053;
-  font-size: 22px;
-  line-height: 1.50;
-  letter-spacing: 0.22px;
-  margin-bottom: 183px;
-}
-
-.project button {
-  color: #FFF;
-  font-size: 18px;
-  line-height: 1.50;
-  letter-spacing: 0.72px;
-  border-radius: 18px;
-  background-color: #292F36;
-  padding: 22px 50px;
-}
-
-.project img {
-  border-radius: 0px 326px 0px 123px;
-  margin-left: 77px;
-}
-
-/* .img {
-  width: 592px;
-  height: 635px;
-  background-color: aqua;
-  background-image: url(img/project.jpeg);
-  background-attachment: fixed;
-  border-radius: 0px 326px 0px 123px;
-  margin-left: 77px;
-} */
-
-/* =================================brand============================== */
-.brand {
-  border-radius: 25px;
-  background: linear-gradient(0deg, #F4F0EC 0%, #F4F0EC 100%), #FFF;
-}
-
-.brand-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 48px 0;
-  margin-bottom: 113px;
-}
-
-
-/* ===============================projects=============================== */
-.projects {
-  margin-bottom: 161px;
-}
-
-.projects-title {
-  color: #292F36;
-  text-align: center;
-  font-family: DM Serif Display;
-  font-size: 47px;
-  line-height: 1.32;
-  letter-spacing: 0.22px;
-  margin-bottom: 20px;
-}
-
-.projects-text {
-  color: #4D5053;
-  text-align: center;
-  font-size: 22px;
-  line-height: 1.50;
-  letter-spacing: 0.22px;
-  max-width: 768px;
-  margin: 0 auto;
-  margin-bottom: 71px;
-}
-
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px 20px;
-}
-
-.projects-item {}
-
-.projects-item img {
-  border-top-right-radius: 80px;
-  margin-bottom: 25px;
-}
-
-.projects-item h3 {
-  color: #292F36;
-  text-align: center;
-  font-family: DM Serif Display;
-  font-size: 24px;
-  line-height: 1.56;
-  letter-spacing: 0.22px;
-}
-
-.projects-item p {
-  color: #4D5053;
-  font-size: 22px;
-  line-height: 1.50;
-  letter-spacing: 0.22px;
-  text-align: center;
-}
-
-/* ===================================footer=========================== */
-
-.footer .wrap {
-  background-color: #F4F0EC;
-
-}
-
-.footer-info {
-  height: 235px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.footer-logo {
-  margin-bottom: 25px;
-}
-
-.footer-text {
-  color: #4D5053;
-  font-size: 22px;
-  letter-spacing: 0.22px;
-  max-width: 325px;
-  margin-bottom: 30px;
-}
-
-.social-list {
-  display: flex;
-  column-gap: 20px;
-}
-
-.social-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  /* padding: 10px; */
-  width: 30px;
-  height: 30px;
-
-}
-
-/* .social-item:hover {
-  background-color: #CDA274;
-} */
-
-.social-item:hover svg {
-  fill: #CDA274;
-
-}
-
-.footer-copyright {
-  color: #CED1D4;
-  text-align: center;
-  font-size: 22px;
-  line-height: 1.50;
-  letter-spacing: 0.22px;
-  background-color: #0F0F0E;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
