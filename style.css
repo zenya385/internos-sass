@@ -42,3 +42,26 @@ main {
     width: 1200px;
   }
 }
+/* ===============header============= */
+.nav {
+  display: none;
+}
+img {
+  height: 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 480x) {
+}
+/* ===============main============= */
+/* ===============section============= */
+/* ===============section============= */
+/* ===============section============= */
+/* ===============section============= */
+/* ===============footer============= */
