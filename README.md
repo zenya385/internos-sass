@@ -1,3 +1,8 @@
+
+
+/* ====================== Layout ======================== */
+https://www.figma.com/file/yvEOdkbyTWFRZCv2JuF3sU/InternoS?node-id=0%3A1&mode=dev
+
 /* ====================== header ======================== */
 header.header>(a.logo>img)+nav.nav>ul.nav-list>li.nav-item*5>a
 
