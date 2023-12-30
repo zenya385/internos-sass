@@ -45,7 +45,6 @@ main {
 }
 /* ===============header============= */
 .nav {
-
   display: none;
 }
 img {
@@ -55,31 +54,28 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
+  /* width: 400px; */
   padding-top: 24px;
   padding-bottom: 24px;
 }
 @media screen and (min-width: 480px) {
-   .nav {
+  .nav {
     display: none;
-   }
-  
+  }
 }
 @media screen and (min-width: 768px) {
- 
-  .header{
-    justify-content: space-between;
-    display: flex;
+  .header {
+    /* justify-content: space-between; */
+    /* display: flex; */
     flex-direction: column;
   }
   .nav {
     display: flex;
-    
   }
-  .header-modal-svg{
+  .header-modal-svg {
     display: none;
   }
-  .nav-list{
+  .nav-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 45px;
@@ -90,20 +86,78 @@ img {
     letter-spacing: 1.5px;
     margin-right: 10px;
     justify-content: center;
-}
-
-.logo {
-  margin-bottom: 20px;
-}
-
   }
-  .nav-list a {
-    color: #292F36;
+
+  .logo {
+    margin-bottom: 20px;
   }
 }
+.nav-list a {
+  color: #292f36;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    flex-direction: row;
+  }
+}
+
 /* ===============main============= */
-/* ===============section============= */
-/* ===============section============= */
+
+/* ===============section banner============= */
+/* ===============section features============= */
+.features {
+  background-color: #f4f0ec;
+  padding: 35px 10px;
+  border-radius: 25px;
+  /* margin-bottom: 183px; */
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  row-gap: 15px;
+  /* gap: 15px; */
+}
+
+.fetures-item > h3 {
+  color: #292f36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 20px;
+  line-height: 1.56;
+  letter-spacing: 0.22px;
+  margin-bottom: 7px;
+}
+
+.fetures-item > p {
+  color: #4d5053;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
+
+@media screen and (min-width: 480px) {
+  .fetures-item > p {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 70px 0;
+  }
+  .features-list {
+    flex-direction: row;
+  }
+  .fetures-item > h3 {
+    font-size: 25px;
+  }
+  .fetures-item > p {
+    font-size: 22px;
+  }
+}
 /* ===============section============= */
 /* ===============section============= */
 /* ===============footer============= */
