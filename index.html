@@ -20,10 +20,14 @@
   <header class="header container">
     <!-- header.header>(a.logo>img)+nav.nav>ul.nav-list>li.nav-item*5>a -->
     <a href="#" class="logo"><img src="img/logo.png" alt="logo company" /></a>
-    <svg width="40px" height="40px" class="header-modal-svg">
+    <!-- <svg width="40px" height="40px" class="header-modal-svg">
       <use href="img/symbol-defs.svg#icon-menu_40px" width="40px"></use>
-    </svg>
+    </svg> --> 
     <nav class="nav">
+      <input type="checkbox" id="toggle">
+<label for="toggle">
+  <span class="toggle-btn"></span>
+</label>
       <ul class="nav-list">
         <li class="nav-item"><a href="#">Home</a></li>
         <li class="nav-item"><a href="#">Contact Us</a></li>
@@ -150,6 +154,7 @@
       </ul>
     </section>
   </main>
+  
   <footer class="footer">
     <!-- footer.footer>(div.wrap>div.footer-info>((a>img.footer-logo)+p.footer-text{We are the leading architect and interior design firm in the world.})+ul.social-list>li.social-item*5>svg[width="" height=""]>use[href="./img/sprite.svg#icon_social_1"])+div.footer-copyright>p{Copyright © Internos | Designed by}>span[style="color: #CDA274"]{Victorflow} -->
     <div class="wrap">
