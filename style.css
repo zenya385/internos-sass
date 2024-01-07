@@ -46,6 +46,11 @@ main {
 
 /* ===============header============= */
 /* .nav {
+.nav {
+  /* display: none; */
+}
+
+.nav-list {
   display: none;
 } */
 
@@ -62,9 +67,77 @@ img {
   padding-bottom: 24px;
 }
 
+/* ==============Burger-menu=========== */
+
+label {
+  display: block;
+  height: 30px;
+  position: relative;
+  top: 15px;
+}
+
+label span,
+label span::before,
+label span::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+}
+
+label span::before {
+  top: -8px;
+}
+
+label span::after {
+  top: 8px;
+}
+
+.nav-list {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+
+  background: #fff;
+  box-shadow: 0 12px 8px #ececec;
+}
+
+.nav-list li {
+  margin: 15px 0;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ label span {
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:checked ~ label span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+input[type="checkbox"]:checked ~ label span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+input[type="checkbox"]:checked ~ .nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 480px) {
   .nav {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -73,6 +146,10 @@ img {
     /* justify-content: space-between; */
     /* display: flex; */
     flex-direction: column;
+  }
+
+  label{
+    display: none;
   }
 
   .nav {
@@ -84,6 +161,9 @@ img {
   }
 
   .nav-list {
+    top: 0;
+    box-shadow: none;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 10px 45px;
@@ -131,7 +211,7 @@ img {
   /* gap: 15px; */
 }
 
-.fetures-item>h3 {
+.fetures-item > h3 {
   color: #292f36;
   text-align: center;
   font-family: DM Serif Display;
@@ -141,7 +221,7 @@ img {
   margin-bottom: 7px;
 }
 
-.fetures-item>p {
+.fetures-item > p {
   color: #4d5053;
   text-align: center;
   font-size: 17px;
@@ -150,7 +230,7 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .fetures-item>p {
+  .fetures-item > p {
     padding: 0 30px;
   }
 }
@@ -165,11 +245,11 @@ img {
     flex-direction: row;
   }
 
-  .fetures-item>h3 {
+  .fetures-item > h3 {
     font-size: 25px;
   }
 
-  .fetures-item>p {
+  .fetures-item > p {
     font-size: 22px;
   }
 }
