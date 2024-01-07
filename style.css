@@ -193,6 +193,76 @@ input[type="checkbox"]:checked ~ .nav-list {
 /* ===============main============= */
 
 /* ===============section banner============= */
+.banner {
+  /* height: 831px; */
+  /* background: lightgray url(./img/banner.jpg) no-repeat fixed; */
+  background-color: lightgray;
+  background-image: url(./img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  border-radius: 0px 0px 0px 155px;
+  overflow: hidden;
+  padding-left: 60px;
+  padding-top: 188px;
+  margin-bottom: 122px;
+  padding-bottom: 60px;
+}
+
+.banner-title {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 0.22px;
+  margin-bottom: 19px;
+}
+
+.banner-text {
+  color: #4d5053;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  margin-bottom: 57px;
+}
+
+.bunner-btn {
+  color: #fff;
+  background-color: #292f36;
+  border-radius: 18px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.72px;
+  padding: 22px 51px;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .banner {
+  border-radius: 0px 0px 0px 290px;
+  padding-left: 120px;
+  padding-top: 188px;
+  }
+  .banner-title {   
+    font-size: 80px;
+  }
+
+  .banner-text {
+    font-size: 22px;
+  }
+
+  .bunner-btn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+}
 /* ===============section features============= */
 .features {
   background-color: #f4f0ec;
